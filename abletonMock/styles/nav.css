@@ -1,0 +1,167 @@
+body {
+    margin: 0px;
+}
+
+#mainNav {
+    padding: 10px 10px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+}
+
+#secondaryNav {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#secondaryNav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+}
+
+#mainNav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: center;
+}
+
+#mainNav ul .navItem {
+    padding: 5px 16px;
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: 550;
+    font-size: 17px;
+}
+
+#secondaryNav ul .navItem {
+    padding: 0px 16px;
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+#mainNav ul li:hover {
+    cursor: pointer;
+}
+
+#secondaryNav ul li:hover {
+    cursor: pointer;
+}
+
+.orange {
+    color: #ff764d;
+}
+
+#logo {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px 15px;
+}
+
+#vertLogo {
+    display: flex;
+    width: 30px;
+    justify-content: space-between;
+}
+
+#horzLogo {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.vertLine {
+    width: 4px;
+    height: 30px;
+    background-color: black;
+}
+
+.horzLine {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+}
+
+#mainNav ul .loginText {
+    font-size: 12px;
+}
+
+.tabActive {
+    color:#ff764d;
+}
+
+#tryLiveLink {
+    color: #5200ff;
+}
+
+.menuToggler {
+    list-style-type: none;
+    display: none;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 20px;
+    user-select: none;
+}
+
+#navSpaceHolder {
+    height: 83px;
+    border-bottom: 1px solid gray;
+    display: none;
+}
+
+#menuArrow {
+    font-size: 10px;
+}
+
+@media (max-width: 1025px) {
+    #tryLiveLink {
+        color: white;
+    }
+
+    .menuToggler {
+        display: block;
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #mainNav {
+        width: 100%;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: left;
+        position: relative;
+    }
+
+    #mainNav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #mainNav .navItem {
+        margin-top: 20px;
+        display: none;
+    }
+
+    #mainNav .navItem.active {
+        display: block;
+    }
+
+    #mainNav ul:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    #mainNav ul:nth-of-type(1) {
+        margin-bottom: 0;
+    }
+}

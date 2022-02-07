@@ -1,0 +1,95 @@
+.pageAboutHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageAboutHeader img {
+    width: 85%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#imgText {
+    color: #fd5948;
+    font-size: 140px;
+    font-weight: bold;
+    position:absolute;
+}
+
+.blurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.subheader, .pText {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.subheader {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight:bold;
+    letter-spacing: .6px;
+}
+
+.subheader a {
+    color: #5200ff;
+    text-decoration: none;
+}
+
+.textBlurb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBlurb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 80px 0px;
+}
+
+.imgsCard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgsCard img:nth-of-type(1) {
+    width: 50%;
+}
+
+.imgsCard img:nth-of-type(2) {
+    width: 40%;
+}
+
+.imgsCardBackground {
+    width: 55%;
+    height: 55vw;
+    background-color: #fbffa7;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+    .textBlurb {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1025px) {
+    #imgText {
+        font-size: 72px;
+    }
+}

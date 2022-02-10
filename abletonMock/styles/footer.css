@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 85%;
+}
+
+footer h1 {
+    font-size: 64px;
+}
+
+.f1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f1 ul {
+    width: 33%;
+    font-size: 19px;
+}
+
+
+.f2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.f2 ul {
+    display: flex;
+}
+
+.f2 ul, .f1 ul {
+    padding: 0px;
+}
+
+.f2 li {
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.f2 li, .f1 li {
+    list-style-type: none;
+    line-height: 26px;
+}
+
+.listHeader {
+    font-weight: bold;
+}
+
+#socialIcons {
+    display: flex;
+}
+
+.socialIcon {
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#newsLetterForm {
+    margin-top: 10px;
+}
+
+#newsLetterForm input {
+    border: none;
+    background-color: rgb(241, 241, 241);
+    width: 60%;
+    height: 36px;
+    padding: 0px 15px;
+    font-size: 18px;
+    margin-right: -4px;
+}
+
+#newsLetterForm button {
+    border: none;
+    background-color: #0000ff;
+    width: 30%;
+    height: 36px;
+    padding: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.f1 .col3 {
+    width: 40%;
+}
+
+.f1 .col1, .f1 .col2 {
+    width: 30%;
+}
+
+form select {
+    border: none;
+    background-color: rgb(241, 241, 241);
+    height: 30px;
+}
+
+form select:nth-of-type(1) {
+    width: 25%;
+}
+
+form select:nth-of-type(2) {
+    width: 45%;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+.signature {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.content li:not(.listHeader) {
+    cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+    .f1, .f2, .f2 ul {
+        flex-direction: column-reverse;
+    }
+
+
+    .f1 .col1, .f1 .col2, .f1 .col3{
+        width: 100%;
+    }
+
+    .f1 ul {
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 38px;
+    }
+
+    .f2 {
+        flex-direction: column;
+    }
+
+    .f2 ul {
+        margin-bottom: 60px;
+    }
+
+    #row2Footer {
+        flex-direction: column;
+    }
+
+    .signature {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    #endLogo {
+        margin-left: 0px;
+    }
+}
